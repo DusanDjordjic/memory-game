@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>Igra Memorije</h1>
+    <div class="center config-container">
+      <label for="selectDif">Izaberi težinu: </label>
+      <select id="selectDif">
+        <option value="easy">easy: 5s</option>
+        <option value="normal">normal: 4s</option>
+        <option value="hard">hard: 3s</option>
+        <option value="veryhard">veryhard: 2s</option>
+      </select>
+      <p id="timePassed"></p>
+    </div>
+    <div class="center">
+      <div class="grid">
+        <input type="number" class="field" min="1" max="9" />
+        <input type="number" class="field" min="1" max="9" />
+        <input type="number" class="field" min="1" max="9" />
+        <input type="number" class="field" min="1" max="9" />
+        <input type="number" class="field" min="1" max="9" />
+        <input type="number" class="field" min="1" max="9" />
+        <input type="number" class="field" min="1" max="9" />
+        <input type="number" class="field" min="1" max="9" />
+        <input type="number" class="field" min="1" max="9" />
+      </div>
+    </div>
+    <div class="center">
+      <button id="startBtn">Počni</button>
+      <button id="checkBtn" class="hide">Proveri</button>
+    </div>
+    <div class="results-continer center" id="results-continer"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
